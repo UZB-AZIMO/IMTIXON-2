@@ -1,0 +1,29 @@
+.pickup{
+    &__wrapper{
+    margin-top: -200px;
+    padding: 40px;
+    border: 1px solid red;
+    z-index: 2;
+    height: 350px;
+    border-radius: 24px;
+    width: auto;
+    color: black;
+    background-color: white;
+}
+}
+.small__card{
+    display: flex;
+    gap: 35px;
+    .text{
+        font-size: 25px;
+        font-weight: 600;
+        color:#71747d;
+        transition: .9s;
+        &:hover{
+    cursor: pointer;
+    color: black;
+  
+    }
+
+}
+}

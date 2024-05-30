@@ -1,0 +1,99 @@
+.navbar{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: none;
+    &__logo{
+        font-size: 32px;
+        user-select: none;
+    }
+    &__collection ,ul{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+       
+    }
+    .logo__bag{
+        flex: 1;
+    }
+    &__item{
+        list-style: none;
+        font-size: 20px;
+color: #777E90;    
+    transition: .5s;
+        &:hover{
+            color: black;
+            cursor: pointer;
+        }
+    }
+    &__menu{
+        display: none;
+    }
+    &__btn{
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: 1px solid #ddd;
+     color: #777E90;
+        background-color: white;
+        transition: 1s;
+        border-radius: 20px;
+      
+        &:hover{
+background-color:blue;
+color: black;
+        }
+    }
+}
+
+
+
+
+@media (
+    max-width:755px) {
+    .navbar{
+        &__btn{
+            display: block;
+        }
+        &__foto{
+            display: inline;
+        }
+        &__collection{
+            display: none;
+        }
+        &__menu{
+            display: block;
+        }
+    }
+}
+
+@media (
+    max-width:495px) {
+    .navbar{
+        &__btn{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:345px) {
+    .navbar{
+        &__btn{
+            display: none;
+        }
+        &__logo{
+            font-size: 24px;
+        }
+        &__text{
+            margin: 90px 0;
+        }
+        &__menu{
+            display: block;
+        }
+
+    }
+}
+

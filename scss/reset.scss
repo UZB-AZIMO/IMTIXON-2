@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.container-lg{
+    max-width: 1390px;
+    width: 100%;
+    padding: 0 16px;
+    margin: auto;
+}
+.container{
+    max-width: 1248px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+body{
+    min-height: 500vh;
+}
+button{
+    cursor: pointer;
+}
