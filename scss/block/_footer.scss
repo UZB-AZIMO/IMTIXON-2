@@ -1,0 +1,71 @@
+.footer{
+    margin: 50px 0;
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+        line-height: 40px;
+        font-size: 20px;
+    }
+    &__input{
+        border-radius: 24px;
+        border: none;
+        outline: none;
+    }
+}
+.fa-fire{
+    color: orange;
+}
+.card__item{
+    font-size: 20px;
+     color:  #777E90;
+     transition: 1s;
+     &:hover{
+        color: black;
+        cursor: pointer;
+     }
+}
+.input__bag{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.input{
+    font-size: 20px;
+}
+.fa-arrow-right{
+    width: 30px;
+    height: 30px;
+    margin-top: 60px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+.footer__btn{
+    border: none;
+    margin-top: -40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+@media (
+    max-width:500px) {
+    .footer{
+        &__wrapper{
+            flex-direction: column;
+        }
+      
+    }
+}

@@ -27,14 +27,19 @@ border: 1px solid #ddd;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    margin-top: 40px;
+    margin-top: 70px;
    }
    .card{
     border-radius: 20px;
     width: 300px;
+    border: 1px solid white;
     background-color: #F4F5F6;
     padding: 35px 30px;
     text-align: left;
+    transition: 1s;
+    &:hover{
+        border: 1px solid blue;
+    }
     &__text{
         color: 
         #777E90;

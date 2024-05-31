@@ -1,0 +1,66 @@
+.asked{
+    &__title{
+        font-size: 48px;
+    }
+    margin-top: 80px;
+text-align: center;
+    &__bag{
+        margin: 50px 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+    }
+    &__btn{
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 20px;
+        transition: 1s;
+        font-size: 15px;
+        border: none;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (
+    max-width:755px) {
+    .asked{
+        &__title{
+            font-size: 30px;}
+        }
+    }
+
+
+@media (
+    max-width:555px) {
+    .asked{
+        &__title{
+            font-size: 30px;
+        }
+        &__bag{
+            margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+        }
+        &__btn{
+            display: none;
+        }
+        .one{
+            display: block;
+            padding: 10px 40px;
+            border: 1px solid #ddd;
+        }
+
+    }
+}

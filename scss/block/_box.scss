@@ -1,0 +1,65 @@
+.box{
+    margin-top: 50px;
+    text-align: center;
+    &__title{
+        font-size: 34px;
+    }
+    &__text{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    &__wrapper{
+        margin: 40px 0;
+        display: flex;
+        gap: 40px;
+        overflow: auto;
+    }
+    .card{
+        margin-bottom: 40px;
+        img{
+            padding-top: 80px;
+        }
+        min-width: 285px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        text-align: left;
+        transition: 1s;
+
+        &:hover{
+            border: 1px solid blue;
+        }
+        &__item{
+           box-sizing: 10px;
+          
+          
+        }
+        .card__title{
+            margin: 15px 0;
+        }
+        &__text{
+            color: #777E90;
+        }
+    }
+    .fa-tree{
+        color: rgb(0, 202, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (
+    max-width:345px) {
+    .box{
+        &__wrapper{
+            flex-direction: column;
+        }
+      
+    }
+}

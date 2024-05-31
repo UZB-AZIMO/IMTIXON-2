@@ -1,282 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>Document</title>
+    <link rel="icon" href="./assets/Fleet symbol.svg">
+    <title>Fleet</title>
 </head>
+
 <body>
     <!-- header start    -->
     <header class="header">
         <div class="container">
             <nav class="navbar">
                 <div class="logo__bag">
-                    <div  class="logo__1">
+                    <div class="logo__1">
                         <img class="logo" src="./assets/logo.svg" alt="logo">
                     </div>
-                 
+
                 </div>
 
                 <div class="navbar__collection">
                     <ul class="navbar__collection ul">
-                    <li class="navbar__item">
-                        <span>Support</span>
-                    </li>
-                    <li class="navbar__item">
-                        <span>
-                            <i class="fa-solid fa-globe"></i>
-                            Language</span>
-                    </li>
-                </ul>
-            </div>
-                  <button class="navbar__btn">List your property</button>
-                
+                        <li class="navbar__item">
+                            <span>Support</span>
+                        </li>
+                        <li class="navbar__item">
+                            <span>
+                                <i class="fa-solid fa-globe"></i>
+                                Language</span>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar__btn">List your property</button>
+
                 <img style="margin: 0 10px;" class="navbar__foto" src="./assets/qongiroq.svg" alt="foto">
-                  <img class="navbar__foto" src="./assets/avatar.png" alt="foto">
+                <img class="navbar__foto" src="./assets/avatar.png" alt="foto">
                 <div style="margin: 0 10px;" class="navbar__menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
         </div>
         </nav>
-    </div>
+        </div>
     </header>
-<!-- header end    -->
+    <!-- header end    -->
 
-<main class="main">
-<!-- hero start -->
-<div class="container-lg">
-        <section class="hero">
-<div class="hero__wrapper">
-    <p class="hero__title">Car rentals </p>
-    <p class="hero__text">Find and book a great experience.</p>
-    <button class="hero__btn">Start your search</button>
-</div>
-        </section>
-    </div>
+    <main class="main">
+        <!-- hero start -->
+        <div class="container-lg">
+            <section class="hero">
+                <div class="hero__wrapper">
+                    <p class="hero__title">Car rentals </p>
+                    <p class="hero__text">Find and book a great experience.</p>
+                    <button class="hero__btn">Start your search</button>
+                </div>
+            </section>
+        </div>
         <!-- hero end -->
 
         <!-- pickup start -->
         <div class="container">
-        <section class="pickup">
-        <div class="pickup__wrapper">
-            <div class="small__card">
-                <p class="text">Stays</p>
-                <p class="text">Flights</p>
-                <p class="text">Cars</p>
-                <p class="text">Things to do</p>
-             
+            <section class="pickup">
+                <div class="pickup__wrapper">
+                    <div class="small__card">
+                        <p class="text">Stays</p>
+                        <p class="text">Flights</p>
+                        <p class="text">Cars</p>
+                        <p class="text">Things to do</p>
+
+                    </div>
+                    <hr style="margin-top: 20px;color: #ddd5;">
+                    <button class="pickup__btn">Return to same location</button>
+                    <button style="margin-left: 20px;"  class="pickup__btn">Return to same different location</button>
+
+                    <div class="card__bag">
+
+                        <div class="card">
+                            <div class="card__small">
+                                <img class="icon" src="./assets/tel.svg" alt="logo">
+                                <p class="pickup__title">Pickup location</p>
+                                <p class="pickup__item">Language</p>
+                            </div>
+                            <p class="pickup__text">Where are you?</p>
+                        </div>
+
+                        <div class="card two">
+                            <div class="card__small">
+                                <img src="./assets/box.svg" alt="logo">
+                                <p class="pickup__title">Tue, May 11</p>
+                            </div>
+                            <p class="pickup__text">10:00 AM</p>
+                        </div>
+
+                        <div class="card tree">
+                            <div class="card__small">
+                                <img src="./assets/box.svg" alt="logo">
+                                <p class="pickup__title">Fri, May 11</p>
+                            </div>
+                            <p class="pickup__text">10:00 AM</p>
+                        </div>
+                        <img src="./assets/s.svg" alt="logo">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- pickup end -->
+
+        <!-- carousel start-->
+        <section class="carousel">
+            <div class="container">
+                <p class="carousel__title">Popular destinations</p>
+                <p class="carousel__text">for car rentals</p>
+                <div class="carousel__wrapper">
+
+                    <div class="card">
+                        <img src="./assets/efil.png" alt="foto">
+                        <h5 class="card__title">Paris</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/bigben.png" alt="foto">
+                        <h5 class="card__title">London</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/london.png" alt="foto">
+                        <h5 class="card__title">Ams</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/muze.png" alt="foto">
+                        <h5 class="card__title">Milan</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/efil.png" alt="foto">
+                        <h5 class="card__title">Paris</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/bigben.png" alt="foto">
+                        <h5 class="card__title">London</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/london.png" alt="foto">
+                        <h5 class="card__title">Ams</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/muze.png" alt="foto">
+                        <h5 class="card__title">Milan</h5>
+                        <p class="card__text">Car rentals in 86 pickup locations</p>
+                    </div>
+                </div>
+                <button class="carousel__btn">Show more <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
-            <hr style="margin-top: 20px;color: #ddd5;">
-            <button class="pickup__btn">Return to same location</button>
-            <button class="pickup__btn">Return to same different location</button>
+        </section>
+        <!-- carousel end-->
 
-            <div class="card__bag">
+        <!-- rent start -->
+        <section class="rent">
+            <div class="container">
+                <div class="rent__wrapper">
+                    <div class="card">
+                        <p style="font-size: 24px;color:#777E90;font-weight: 300;" class="rent__item">supercharge your
+                            planning powers</p>
+                        <p class="rent__title">Rent a car in minutes with Fleet</p>
+                        <p class="rent__text">Stacks is a production-ready library of stackable content blocks built in
+                            React Native.</p>
+                        <button class="rent__btn">Enter your phone number<i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="imgs">
+                        <img class="one" src="./assets/phone mockup.png" alt="foto">
+                        <img class="two" src="./assets/phone.png" alt="foto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- rent end -->
 
+        <!-- car start -->
+        <section class="car">
+            <div class="container">
+                <div class="bag">
+                    <div class="card">
+                        <p class="car__title">Explore nearby</p>
+                        <p class="car__text">for car rentals</p>
+                    </div>
+                    <div style="display: flex;overflow: auto;" class="card"><i class="fa-solid fa-arrow-left"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="car__wrapper">
+                        <div class="card">
+                            <img src="./assets/efil.png" alt="foto">
+                            <p class="card__title">Paris</p>
+                            <p class="card__text">Car rentals in 86 pickup locations</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/bigben.png" alt="foto">
+                            <p class="card__title">London</p>
+                            <p class="card__text">Car rentals in 86 pickup locations</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/london.png" alt="foto">
+                            <p class="card__title">Ams</p>
+                            <p class="card__text">Car rentals in 86 picku</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/efil.png" alt="foto">
+                            <p class="card__title">Paris</p>
+                            <p class="card__text">Car rentals in 86 pickup locations</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/bigben.png" alt="foto">
+                            <p class="card__title">London</p>
+                            <p class="card__text">Car rentals in 86 pickup locations</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/london.png" alt="foto">
+                            <p class="card__title">Ams</p>
+                            <p class="card__text">Car rentals in 86 picku</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/efil.png" alt="foto">
+                            <p class="card__title">Paris</p>
+                            <p class="card__text">Car rentals in 86 pickup locations</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/bigben.png" alt="foto">
+                            <p class="card__title">London</p>
+                            <p class="card__text">Car rentals in 86 pickup locations</p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/london.png" alt="foto">
+                            <p class="card__title">Ams</p>
+                            <p class="card__text">Car rentals in 86 picku</p>
+                        </div>
+                    </div>
+                    <button class="car__btn">Show more <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- car end -->
+
+        <!-- servic srart -->
+        <section class="servic">
+            <div class="container">
+                <p class="servic__text">A creative agency that lead and inspire</p>
+                <p class="searic__title">Amazing Services</p>
+                <button class="searic__btn">Contact Us</button>
+                <div class="servic__wrapper">
+
+                    <div class="card">
+                        <img class="card__img" src="./assets/smile.svg" alt="foto">
+                        <h4 class="card__title">1+M reviewers</h4>
+                        <p class="card__text">We realize ideas from simple to complex, everything becomes easy to use
+                            and reach the most potential customers.</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="./assets/Filled.png" alt="foto">
+                        <h4 class="card__title">24/7 customer service</h4>
+                        <p class="card__text">We realize ideas from simple to complex, everything becomes easy to use
+                            and reach the most potential customers.</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="card__img" src="./assets/Filled.svg" alt="foto">
+                        <h4 class="card__title">Free cancellation</h4>
+                        <p class="card__text">We realize ideas from simple to complex, everything becomes easy to use
+                            and reach the most potential customers.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- servic end -->
+
+        <!-- home start -->
+        <section class="home">
+<div class="container">
+            <div class="home__wrapper">
                 <div class="card">
-                <div class="card__small">
-                    <img class="icon" src="./assets/tel.svg" alt="logo">
-<p class="pickup__title">Pickup location</p>
-<p class="pickup__item">Language</p>
-</div>
-<p class="pickup__text">Where are you?</p>    
-            </div>
+                    <img src="./assets/r.png" alt="foto">
+                </div>
+                    <div class="card">
+                        <img src="./assets/wa.png" alt="foto">
+                    </div>
+                        <div class="card">
+                            <img src="./assets/tr.png" alt="foto">
+                        </div>
+                            <div class="card">
+                                <img src="./assets/go.png" alt="foto">
+                            </div>
+                                <div class="card">
+                                    <img src="./assets/tr.png" alt="foto">
+                                </div>
+                                    <div class="card">
+                                        <img src="./assets/r.png" alt="foto">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+        </section>
+  <!-- home end-->
 
-            <div class="card two">
-                <div class="card__small">
-                    <img src="./assets/box.svg" alt="logo">
-<p class="pickup__title">Tue, May 11</p>
-</div>
-<p class="pickup__text">10:00 AM</p>    
-            </div>
-
-            <div class="card tree">
-                <div class="card__small">
-                    <img src="./assets/box.svg" alt="logo">
-<p class="pickup__title">Fri, May 11</p>
-</div>
-<p class="pickup__text">10:00 AM</p>  
-            </div>
-            <img src="./assets/s.svg" alt="logo">  
-            </div>
-        </div>
-    </section>
-</div>
-<!-- pickup end -->
-
-<!-- carousel start-->
-<section class="carousel">
+  <!-- asked start -->
+  <section class="asked">
     <div class="container">
-        <p class="carousel__title">Popular destinations</p>
-        <p class="carousel__text">for car rentals</p>
-        <div class="carousel__wrapper">
+        <div class="asked__wrapper">
+<p class="asked__title">Frequently asked questions</p>
+<div class="asked__bag">
+    <button class="asked__btn one">General</button>
+    <button class="asked__btn">Support</button>
+    <button class="asked__btn">Hosting</button>
+    <button class="asked__btn">Hosting</button>
+</div>
+
+        </div>
+    </div>
+  </section>
+  
+  <!-- asked end -->
+
+   <!-- box start -->
+  <section class="box">
+    <div class="container">
+        <p class="box__title">Recommended pickup locations</p>
+        <p class="box__text">A lot of amazing experiences 
+ 
+            Icon Family
             
-            <div class="card">
-                <img src="./assets/efil.png" alt="foto">
-                <h5 class="card__title">Paris</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/bigben.png" alt="foto">
-                <h5 class="card__title">London</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/london.png" alt="foto">
-                <h5 class="card__title">Ams</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/muze.png" alt="foto">
-                <h5 class="card__title">Milan</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/efil.png" alt="foto">
-                <h5 class="card__title">Paris</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/bigben.png" alt="foto">
-                <h5 class="card__title">London</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/london.png" alt="foto">
-                <h5 class="card__title">Ams</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/muze.png" alt="foto">
-                <h5 class="card__title">Milan</h5>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-        </div>
-        <button class="carousel__btn">Show more <i class="fa-solid fa-chevron-right"></i>
-        </button>
-    </div>
-</section>
-<!-- carousel end-->
+            Classic
+            Select an Icon Style
+            <i class="fa-solid fa-tree"></i> </p>
+        <div class="box__wrapper">
 
-<!-- rent start -->
-<section class="rent">
-    <div class="container">
-    <div class="rent__wrapper">
-        <div class="card">
-            <p style="font-size: 24px;color:#777E90;font-weight: 300;" class="rent__item">supercharge your planning powers</p>
-            <p class="rent__title">Rent a car in minutes with Fleet</p>
-            <p class="rent__text">Stacks is a production-ready library of stackable content blocks built in React Native.</p>
-            <button class="rent__btn">Enter your phone number<i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="imgs">
-            <img class="one" src="./assets/phone mockup.png" alt="foto">
-            <img class="two" src="./assets/phone.png" alt="foto">
+            <div class="card">
+                <p class="card__item">128</p>
+                <img src="./assets/Line.svg" alt="foto">
+                <p class="card__title">South Virgilland</p>
+                <p class="card__text">From Rs. 1,461 per day</p>
+            </div>
+
+            <div class="card">
+                <p class="card__item">256</p>
+                <img src="./assets/Line.svg" alt="foto">
+                <p class="card__title">Purdyhaven</p>
+                <p class="card__text">From Rs. 1,461 per day</p>
+            </div>
+
+            <div class="card">
+                <p class="card__item">128</p>
+                <img src="./assets/Line.svg" alt="foto">
+                <p class="card__title">Port Jarrett</p>
+                <p class="card__text">From Rs. 1,461 per day</p>
+            </div>
+
+            <div class="card">
+                <p class="card__item">256</p>
+                <img src="./assets/Line.svg" alt="foto">
+                <p class="card__title">New Kristian</p>
+                <p class="card__text">From Rs. 1,461 per day</p>
+            </div>
+
+            <div class="card">
+                <p class="card__item">128</p>
+                <img src="./assets/Line.svg" alt="foto">
+                <p class="card__title">Demetrisfort</p>
+                <p class="card__text">From Rs. 1,461 per day</p>
+            </div>
+
         </div>
     </div>
-</div>
-</section>
-<!-- rent end -->
-
-<!-- car start -->
-<section class="car">
-    <div class="container">
-    <div class="bag">
-        <div class="card">
-     <p class="car__title">Explore nearby</p>
-    <p class="car__text">for car rentals</p>
-</div>
-<div style="display: flex;overflow: auto;" class="card" ><i class="fa-solid fa-arrow-left"></i>
-    <i class="fa-solid fa-arrow-right"></i>
-</div>
-</div>
-    <div class="container">
-        <div class="car__wrapper">
-            <div class="card">
-                <img src="./assets/efil.png" alt="foto">
-                <p class="card__title">Paris</p>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/bigben.png" alt="foto">
-                <p class="card__title">London</p>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/london.png" alt="foto">
-                <p class="card__title">Ams</p>
-                <p class="card__text">Car rentals in 86 picku</p>
-            </div>
-
-            <div class="card">
-                <img src="./assets/efil.png" alt="foto">
-                <p class="card__title">Paris</p>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/bigben.png" alt="foto">
-                <p class="card__title">London</p>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/london.png" alt="foto">
-                <p class="card__title">Ams</p>
-                <p class="card__text">Car rentals in 86 picku</p>
-            </div>
-
-            <div class="card">
-                <img src="./assets/efil.png" alt="foto">
-                <p class="card__title">Paris</p>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/bigben.png" alt="foto">
-                <p class="card__title">London</p>
-                <p class="card__text">Car rentals in 86 pickup locations</p>
-            </div>
-            <div class="card">
-                <img src="./assets/london.png" alt="foto">
-                <p class="card__title">Ams</p>
-                <p class="card__text">Car rentals in 86 picku</p>
-            </div>      
-        </div>
-        <button class="car__btn">Show more <i class="fa-solid fa-chevron-right"></i>
-        </button>
-    </div>
-</div>
-</section>
-<!-- car end -->
-
-
-<section class="servic">
-    <div class="container">
-    <p class="servic__text">A creative agency that lead and inspire</p>
-    <p class="searic__title">Amazing Services</p>
-    <button class="searic__btn">Contact Us</button>
-    <div class="servic__wrapper">
-
-        <div class="card">
-            <img class="card__img" src="./assets/smile.svg" alt="foto">
-            <h4 class="card__title">1+M reviewers</h4>
-            <p class="card__text">We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</p>
-        </div>
-
-        <div class="card">
-            <img class="card__img" src="./assets/Filled.png" alt="foto">
-            <h4 class="card__title">24/7 customer service</h4>
-            <p class="card__text">We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</p>
-        </div>
-
-        <div class="card">
-            <img class="card__img" src="./assets/Filled.svg" alt="foto">
-            <h4 class="card__title">Free cancellation</h4>
-            <p class="card__text">We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</p>
-        </div>
-
-    </div>
-</div>
-</section>
+  </section>
+   
+      <!-- box end -->
 
     </main>
+
+    <!-- footer start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+        <div class="card"><img src="./assets/logo.svg" alt="logo"></div>
+
+        <div class="card">
+            <p class="card__item">About</p>
+            <p class="card__item">Projects</p>
+        </div>
+        <div class="card">
+            <p class="card__item">What We Do</p>
+            <p class="card__item">Press</p>
+        </div>
+        <div class="card">
+            <p class="card__item">Jobs</p>
+            <p class="card__item">Download</p>
+        </div>
+<div class="card">
+    <p class="card__title">Join our community <i class="fa-solid fa-fire"></i></p>
+    <div class="input__bag">
+    <input style="font-size: 16px;" class="footer__input" type="text" placeholder="Enter your email" >
+    <button class="footer__btn"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+    </div>
+        </div>
+    </footer>
+    <!-- footer start-->
+
 </body>
 </html>
