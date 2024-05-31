@@ -33,14 +33,15 @@ color: #777E90;
         padding: 10px 20px;
         margin: 0 10px;
         border: 1px solid #ddd;
-     color: #777E90;
+     color: black;
+     font-weight: 400;
         background-color: white;
         transition: 1s;
         border-radius: 20px;
       
         &:hover{
 background-color:blue;
-color: black;
+color: white;
         }
     }
 }
@@ -74,8 +75,6 @@ color: black;
         }
     }
 }
-
-
 
 
 

@@ -1,14 +1,61 @@
 .pickup{
     &__wrapper{
     margin-top: -200px;
-    padding: 40px;
-    border: 1px solid red;
+    border: 1px solid #ddd5;
+    padding: 30px;
     z-index: 2;
     height: 350px;
     border-radius: 24px;
     width: auto;
     color: black;
     background-color: white;
+}
+.pickup__item{
+    display: none;
+}
+.card__bag{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+gap: 80px;
+overflow: hidden;
+    &__card{
+        display: flex;
+    flex-direction: column;
+         }
+         .pickup__text{
+            margin-left: 35px;
+            color: #71747d;
+
+         }
+         .card{
+            flex-direction: column;
+            border: 1px solid #ddd5;
+            padding: 10px;
+            border-radius: 10px;
+           
+         }
+         .pickup__title{
+            font-size: 18px;
+            margin-top:3px;
+            font-weight: 600;
+        }
+
+         .card__small{
+            display: flex;
+         }
+}
+&__btn{
+    background-color: white;
+    margin-top: 40px;
+    border: 1px solid #71747d;
+    border-radius: 24px;
+    padding: 10px 20px;
+    transition: .9s;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
 }
 }
 .small__card{
@@ -26,4 +73,190 @@
     }
 
 }
+}
+
+
+
+
+@media (
+    max-width:1105px) {
+    .pickup{
+        &__wrapper{
+            margin: 0 10px;
+            margin-top: -200px;
+            padding: 20px;
+        }
+        
+    }
+}
+
+@media (
+    max-width:945px) {
+    .pickup{
+        .tree{
+            display: none;
+          }
+            
+        
+    }
+}
+
+
+
+@media (
+    max-width:755px) {
+    .pickup{
+        &__wrapper{
+            margin: 0 20px;
+            margin-top: -200px;
+            padding: 20px;
+
+        .small__card{
+            display: flex;
+            gap: 18px;
+            .text{
+                font-size: 20px;
+                color:#71747d;
+                transition: .9s;
+                &:hover{
+            cursor: pointer;
+            color: black;
+          
+            }
+     
+        }
+        }
+    }
+        
+
+    }
+   
+}
+
+
+@media (
+    max-width:725px) {
+    .pickup{
+        .two{
+            display: none;
+          }
+    }
+    .pickup__title{
+        
+    display: none;
+}
+    }
+    
+@media (
+    max-width:725px) {
+    .pickup{
+        .pickup__item{
+            display: block;
+        }
+}
+    }
+
+
+
+@media (
+    max-width:655px) {
+    .pickup{
+        .pickup__btn{
+display: none;
+        }
+    }
+}
+
+    
+
+@media (
+    max-width:555px) {
+    .pickup{
+        &__wrapper{
+            margin-top: -180px;
+            padding: 20px;
+        }
+
+        
+        .small__card{
+            display: flex;
+            gap: 18px;
+            .text{
+                font-size: 16px;
+                color:#71747d;
+                transition: .9s;
+                &:hover{
+            cursor: pointer;
+            color: black;
+          
+            }
+        
+        }
+        }
+    }
+}
+
+
+
+
+@media (
+    max-width:405px) {
+    .pickup{
+        &__wrapper{
+            margin: 0 20px;
+            margin-top: -80px;
+            padding: 20px;
+        }
+        .card__bag{
+            gap: 10px;
+        }
+        .pickup__text{
+            font-size: 10px;
+            margin-left: 35px;
+            color: #71747d;
+         }
+         .pickup__title{
+            display: none;
+         }
+         .pickup__item{
+            display: block;
+         }
+         .card{
+            flex-direction: column;
+            border: 1px solid #ddd5;
+            padding: 10px;
+            border-radius: 10px;
+           
+         }
+         .pickup__title{
+            font-size: 15px;
+            margin-top:3px;
+            font-weight: 200;
+        }
+
+         .card__small{
+            display: flex;
+         }
+
+
+        .small__card{
+            display: flex;
+            gap: 15px;
+            .text{
+                font-size: 10px;
+                color:#71747d;
+                transition: .9s;
+                &:hover{
+            cursor: pointer;
+            color: black;
+            }
+        
+        }
+        }
+        
+        
+    }
+    .icon{
+        font-size: 10px;
+    }
 }
