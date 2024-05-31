@@ -1,0 +1,46 @@
+.servic{
+    margin-top: 50px;
+    text-align: center;
+    &__text{
+        font-size: 20px;
+    }
+   .searic__btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    font-size: 20px;
+    background-color: rgb(52, 52, 255);
+    color: white;
+    transition: 1s;
+    &:hover{
+background-color: white;
+color: black;
+border: 1px solid #ddd;
+    }
+   }
+   .searic__title{
+    margin: 15px 0 30px 0;
+    font-size: 48px;
+   }
+   &__wrapper{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+   }
+   .card{
+    border-radius: 20px;
+    width: 300px;
+    background-color: #F4F5F6;
+    padding: 35px 30px;
+    text-align: left;
+    &__text{
+        color: 
+        #777E90;
+    }
+    &__title{
+        margin: 35px 0 10px 0;
+    }
+   }
+}

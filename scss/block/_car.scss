@@ -4,6 +4,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
+        justify-content: center;
     }
     margin-top: 50px;
     .fa-arrow-right{
@@ -36,14 +37,16 @@
             cursor: pointer;
         }
     }
+   
     &__title{
         font-size: 48px;
         margin-bottom: 10px;
     }
     &__text{
-        font-size: 24px;
+        font-size: 20px;
         color: #777E90;
     }
+
     .bag{
         display: flex;
         justify-content: space-between;
